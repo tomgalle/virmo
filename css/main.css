@@ -81,7 +81,8 @@ p{margin: 0;}
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: auto auto auto auto;
+  transform: translate(0, -50px);
 }
 
 .logo {
@@ -208,7 +209,7 @@ margin-left: 55px;
   position: absolute;
   width: 347px;
   height: 474px;
-  top: 520px;
+  top: 380px;
   left: 565px;
 }
 
@@ -246,7 +247,7 @@ margin-left: 55px;
 
 
 .page_three{
-	background: url(../img/bg3@2x.png)no-repeat center center;
+	background: url(../img/bg3@2x.jpg) no-repeat center center;
 	background-size: 2560px 851px;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;		
@@ -272,7 +273,7 @@ margin-left: 55px;
 	height: 700px;
   margin-left: 520px;
 
-	margin-top: 16vh;
+	margin-top: 12vh;
 }
 
 
@@ -311,7 +312,7 @@ margin-left: 55px;
 
 
 .page_four{
-	background: url(../img/bg4@2x.png)no-repeat center center;
+	background: url(../img/bg4@2x.jpg) no-repeat center center;
 	background-size: 2558px 816px;
 	-webkit-background-size: cover;
  -moz-background-size: cover;
@@ -345,7 +346,7 @@ margin-left: 55px;
 
 
 .page_five{
-	background: url(../img/bg5.2@2x.png) no-repeat center center;
+	background: url(../img/bg5.2@2x.jpg) no-repeat center center;
 	/*background-position: center center;*/
 	-webkit-background-size: 160% auto;	
   	-moz-background-size: 160% auto;	
@@ -454,7 +455,7 @@ margin-left: 55px;
 
 
 .page_six{
-	background: url(../img/bg6@2x.png)no-repeat center center;
+	background: url(../img/bg6@2x.jpg) no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
