@@ -5,33 +5,32 @@
 
 // VARIABLES
 
-var $windowWidth = $(window).width(),
-$windowHeight = $(window).height(),
-$document = $(document),
-$window = $(window),
-$topSection = $(".top_section"),
-$bottomSection = $(".bottom_section"),
-$section = $(".section"),
-$goDown = $(".godown"),
-$pageOne = $(".page_one");
-
+var windowWidth = $(window).width();
+var windowHeight = $(window).height();
+var topSection = $(".top_section");
+var bottomSection = $(".bottom_section");
+var section = $(".section");
+var goDown = $(".godown");
+var pageOne = $(".page_one");
 
 
 // SET PAGES
 
 function setPages() {
-	$windowWidth = $(window).width(),
-	$windowHeight = $(window).height();
-	$section.css({ "height": $windowHeight, "width": $windowWidth });
+	windowWidth = $(window).width(),
+	windowHeight = $(window).height();
+	// section.css({ "height": windowHeight, "width": windowWidth });
 }
+
 setPages();
 
 
 // RESIZE
 
-$(window).resize(function(){
-setPages();
-splitHalf();
+// $(window).resize(function(){
+$(window).on('resize', function(){
+	setPages();
+	splitHalf();
 });
 
 $(window).on('scroll', function(){
@@ -52,14 +51,14 @@ $(window).on('scroll', function(){
 // SPLIT PAGE 7
 
 function splitHalf(){
-	var $windowWidth = $(window).width(),
-	$windowHeight = $(window).height();
-	$topSection.css({height: $windowHeight / 2});
-	$bottomSection.css({
-		height: $windowHeight / 2,
+	// windowWidth = $(window).width(),
+	// windowHeight = $(window).height();
+	// topSection.css({height: windowHeight / 2});
+	// bottomSection.css({
+	// 	height: windowHeight / 2,
 	// 	position: "absolute",
 	// 	bottom: "0px"
-	});
+	// });
 
 }
 splitHalf();
@@ -68,16 +67,11 @@ splitHalf();
 
 // GO DOWN 1 PAGE
 
-function scrollDown(){
-	$windowWidth = $(window).width(),
-	$windowHeight = $(window).height();
-	$goDown.click(function(){
-		$("html, body").animate({scrollTop: $windowHeight}, 400);
-	});
-
-
-
-}
+// goDown.click(function(){
+goDown.on('click', function(e){
+	e.preventDefault();
+	$("html, body").animate({scrollTop: windowHeight}, 400);
+});
 
 
 
