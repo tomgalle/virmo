@@ -34,15 +34,42 @@ $(window).on('resize', function(){
 });
 
 $(window).on('scroll', function(){
-	var header = $('#header');
 
 	var st = $(window).scrollTop();
+
+	// header
+	var header = $('#header');
+
 	if(st>$(window).height()){
 		if( !header.hasClass("small-header") ) header.addClass("small-header");
 
 	}else{
 		if( header.hasClass("small-header") ) header.removeClass("small-header");
 
+	}
+
+	// parallax
+	var dy = $(".page_two").position().top - st;
+
+	if(st>0 && st<$('.page_one').height()+$('.page_two').height()){
+		$(".jar").css({
+			'transform': 'translateY('+ -dy*0.2 +'px) rotate('+(-dy*0.010)+'deg)'
+		})
+		$(".pill1").css({
+			'transform': 'translateY('+ dy*1.2 +'px)'
+		})
+
+		$(".pill2").css({
+			'transform': 'translateY('+ dy*0.4 +'px)'
+		})
+
+		$(".pill3").css({
+			'transform': 'translateY('+ dy*0.1 +'px)'
+		})
+
+		$(".pagetwo_title").css({
+			// 'transform': 'translateY('+ -dy*0.4 +'px)'
+		})		
 	}
 
 })
@@ -70,7 +97,7 @@ splitHalf();
 // goDown.click(function(){
 goDown.on('click', function(e){
 	e.preventDefault();
-	$("html, body").animate({scrollTop: windowHeight}, 400);
+	$("html, body").animate({scrollTop: windowHeight}, 800);
 });
 
 

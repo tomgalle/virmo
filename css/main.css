@@ -154,7 +154,7 @@ margin-left: 55px;
 */
 
 .page_two{
-	background: url(../img/bg2.png) no-repeat center center;
+	 /*background: url(../img/bg2.png) no-repeat center center; */
 	background-color: #ffffff;
 	-webkit-background-size:  180% auto;	
   	-moz-background-size: 180% auto;	
@@ -164,7 +164,54 @@ margin-left: 55px;
 
   width: 100vw;
   height: 120vh;
+  min-height: 816px;
+  overflow: hidden;
+
 }
+
+.page_two_img_container{
+  width: 940px;
+  height: 100%;
+  margin: auto;
+  overflow: visible;
+  position: relative;
+}
+
+.pill1{
+  background-image: url(../img/pill1.png);
+  position: absolute;
+  width: 514px;
+  height: 399px;
+  top:200px;
+  left: 340px;
+  z-index: 11;
+}
+.pill2{
+  background-image: url(../img/pill2.png);
+  position: absolute;
+  width: 814px;
+  height: 534px;
+  top:270px;
+  left: 110px;
+  
+}
+.pill3{
+  background-image: url(../img/pill3.png);
+  position: absolute;
+  width: 492px;
+  height: 564px;
+  top: 90px;
+  left: 155px;
+}
+.jar{
+  background-image: url(../img/jar.png);
+  position: absolute;
+  width: 347px;
+  height: 474px;
+  top: 520px;
+  left: 565px;
+}
+
 
 .pagetwo_title{
 	z-index: 10;
