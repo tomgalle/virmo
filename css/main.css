@@ -8,8 +8,8 @@ body{
     margin: 0;
     width: 100%;
     height: 100%;
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-   Helvetica, Arial, "Lucida Grande", sans-serif; 
+   /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+   font-family: "Lato", sans-serif; 
    font-weight: 300; 
 }
 
@@ -30,24 +30,58 @@ p{margin: 0;}
 
 
 
+
+/* ------- HEADER ------- */
+#header{
+  position: fixed;
+  z-index: 10;
+  transform-origin: top left;
+  transition: all .5s;
+}
+
+#header.small-header{
+  transform: scale(0.5);
+}
+
 /* ------- PAGEONE ------- */
 
 
 .page_one{
-	background: url(../img/bg1@2x.png)no-repeat center center;
+	/*background: url(../img/bg1@2x.png)no-repeat center center;*/
 	/*background-size: 1272px 816px;*/
 /*	-o-background-size:80% auto;
 	-webkit-background-size:80% auto;
 	-moz-background-size:80% auto;
 	background-size:80% auto;*/
-	background-color: #f8f8f8;
-	width: 100%;
-	height: 100%;
-	-webkit-background-size: cover;
+	background-color: #f4f4f4;
+	width: 100vw;
+	height: 100vh;
+/*	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	
+*/	
+  position: relative;
+  
+	/* background-color: #f4f4f4; */
+
+}
+
+.hero_wrapper{
+  background-image: url(../img/hero.jpg);  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  max-height: 815px;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .logo {
@@ -67,7 +101,8 @@ margin-left: 55px;
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 25px;
-	font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: NB International Pro, sans-serif;
 }
 
 .button{
@@ -83,7 +118,7 @@ margin-left: 55px;
 	padding-top: 17px;
 	color: #b1b1b1;
 	text-transform: uppercase;
-	font-family: NB International Pro Bold;
+	font-family: NB International Pro;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
@@ -112,36 +147,97 @@ margin-left: 55px;
 
 /* ------- PAGE TWO ------- */
 
-
+/*
 .small_logo{
 	margin: 50px 50px;
 }
-
+*/
 
 .page_two{
-	background: url(../img/bg2.png)no-repeat center center;
-	background-color: #f8f8f8;
+	 /*background: url(../img/bg2.png) no-repeat center center; */
+	background-color: #ffffff;
 	-webkit-background-size:  180% auto;	
   	-moz-background-size: 180% auto;	
   	-o-background-size: 180% auto;	
   	background-size: 220% auto;	
+  position: relative;
+
+  width: 100vw;
+  height: 120vh;
+  min-height: 816px;
+  overflow: hidden;
+
 }
+
+.page_two_img_container{
+  width: 940px;
+  height: 100%;
+  margin: auto;
+  overflow: visible;
+  position: relative;
+}
+
+.pill1{
+  background-image: url(../img/pill1.png);
+  position: absolute;
+  width: 514px;
+  height: 399px;
+  top:200px;
+  left: 340px;
+  z-index: 11;
+}
+.pill2{
+  background-image: url(../img/pill2.png);
+  position: absolute;
+  width: 814px;
+  height: 534px;
+  top:270px;
+  left: 110px;
+  
+}
+.pill3{
+  background-image: url(../img/pill3.png);
+  position: absolute;
+  width: 492px;
+  height: 564px;
+  top: 90px;
+  left: 155px;
+}
+.jar{
+  background-image: url(../img/jar.png);
+  position: absolute;
+  width: 347px;
+  height: 474px;
+  top: 520px;
+  left: 565px;
+}
+
 
 .pagetwo_title{
 	z-index: 10;
 	color: black;
 	text-align: center;
 	font-size: 35px;
-	margin-top: 8vh;
+	/*margin-top: 8vh;*/
 	line-height: 52px;
-	/*font-family: NB International Pro Light;*/
+	font-family: NB International Pro;
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  max-width: 600px;
+  max-height: 200px;
+
 }
+
 
 .pagetwo_title span{
 	font-weight: bold;	
 }
-
-
 
 
 
@@ -158,12 +254,25 @@ margin-left: 55px;
   	background-size: cover;
   	/*background-color: #ebe9ea;*/
   	overflow: hidden;
+
+    width: 100vw;
+    height: 90vh;
+    max-height: 816px;
 }
 
-.textblock{
+.page_three_inner_wrapper{
+  width: 940px;
+  height: 100%;
+  margin: auto;
+}
+
+.page_three .textblock{
 	color: black;
 	width: 410px;
 	height: 700px;
+  margin-left: 520px;
+
+	margin-top: 16vh;
 }
 
 
@@ -173,13 +282,13 @@ margin-left: 55px;
 	font-size: 14px;
 	text-transform: uppercase;
 	/*font-weight: medium;*/
-	font-family: Lato Regular;
+	font-family: Lato;
 }
 
 .large_title{
 	color: #3c3c3c;
 	font-size: 30px;
-	/*font-family: NB International Pro Regular;*/
+	/*font-family: NB-International-Pro-Regular;*/
 }
 
 
@@ -190,12 +299,6 @@ margin-left: 55px;
 	margin-top: 20px;
 }
 
-.left{
-	float: left;
-	margin-left: 54vw;
-	margin-top: 170px;
-
-}
 
 
 
@@ -211,18 +314,25 @@ margin-left: 55px;
 	background: url(../img/bg4@2x.png)no-repeat center center;
 	background-size: 2558px 816px;
 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;	
-  }
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;	
 
-.right{
-	/*float: left;*/
-	float: right;
-	margin-right: 55vw;
-	margin-top: 250px;
-	width: 400px;
-	/*background-color: red;*/
+ width: 100vw;
+ height: 90vh;
+ max-height: 816px;
+ overflow: hidden;
+}
+
+.page_four_inner_wrapper{
+  width: 940px;
+  /*height: 100%;*/
+  margin: auto;
+}
+
+.page_four .textblock{
+  margin-top: 16vh;
+  width: 400px;
 }
 
 
@@ -235,7 +345,7 @@ margin-left: 55px;
 
 
 .page_five{
-	background: url(../img/bg5.2@2x.png)no-repeat center center;
+	background: url(../img/bg5.2@2x.png) no-repeat center center;
 	/*background-position: center center;*/
 	-webkit-background-size: 160% auto;	
   	-moz-background-size: 160% auto;	
@@ -243,17 +353,39 @@ margin-left: 55px;
   	background-size: 160% auto;	
   	color: #3c3c3c;
   	position: relative;
-  	height: 630px;
-  	width: auto;
+  	/*height: 630px;*/
+  	width: 100vw;
+    min-height: 90vh;
+    
+	 /*padding: 100px 0; */
+
 }
 
 .textblock_two{
+  width: 940px;
+  height: 520px;
+  margin: auto;
+  /*height: 500px;*/
+  /*position: absolute;*/
+  /*top: 7vh;*/
+  /*right: 52vw;*/
+  /*font-family: Lato;*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.textblock_three{
 	width: 450px;
-	height: 500px;
-	position: absolute;
-	top: 7vh;
-	right: 52vw;
-	font-family: Lato Regular;
+  height: auto;
+	/*height: 500px;*/
+	/*position: absolute;*/
+	/*top: 7vh;*/
+	/*right: 52vw;*/
+	/*font-family: Lato;*/
 }
 
 .title_two{
@@ -261,7 +393,8 @@ margin-left: 55px;
 	font-weight: bold;
 	margin-bottom: 20px;
 	font-size: 25px;
-	font-family: NB International Pro Bold;
+	font-family: NB International Pro; 
+  line-height: 1.2;
 }
 
 .margin_bottom{margin-bottom: 35px;}
@@ -272,16 +405,18 @@ margin-left: 55px;
 
 .facts{
 	width: 450px;
-	height: 120px;
+  /*height: 120px;*/
+	height: auto;
 	border: 1px solid black;
 	margin-top: 35px;
+  padding-bottom: 15px;
 }
 
 .facts_title{
 	font-weight: bold;
 	margin: 15px 0px 0px 20px;
 	font-size: 20px;
-	font-family: NB International Pro Bold;
+	font-family: NB International Pro;
 
 }
 
@@ -306,7 +441,7 @@ margin-left: 55px;
 .small_text{
 	font-size: 12px;
 	color: #b1b1b1;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 
@@ -325,7 +460,27 @@ margin-left: 55px;
   	-o-background-size: cover;
   	background-size: cover;
   	color: #3c3c3c;
+
+    padding: 100px auto;
+
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    min-height: 800px;
+
 }
+
+.page_six_inner_wrapper{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 
 .center_margin{
 	text-align: center;
@@ -333,7 +488,7 @@ margin-left: 55px;
 }
 
 .center_margin:first-child{
-	padding-top: 150px;
+	/*padding-top: 150px;*/
 }
 
 .oculus{
@@ -388,23 +543,29 @@ margin-left: 55px;
 	
 }
 
+.page_seven a{
+    color: #a5a5a5;
+}
+.page_seven a:hover{
+  text-decoration: underline;
+}
+
 
 .top_section{
 	background-color: white;
 	position: relative;
+  min-height: 410px;
+  width: 100%;
+  position: relative;
 }
 
 .topsection_wrapper{
 	width: 530px;
 	height: 230px;
-	/*background-color: orange;*/
-	width: 37%;
-  	height: 50%;
-  	overflow: auto;
-  	margin: auto;
-  	position: absolute;
-  	top: 0; left: 0; bottom: 0; right: 0;
-  	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	overflow: hidden;
 }
 
 .product{
@@ -424,6 +585,8 @@ margin-left: 55px;
 	background-color: #3c3c3c;
 	position: relative;
 	/*color: red;*/
+  width: 100vw;
+  height: 412px;
 }
 
 .bottomsection_wrapper{
@@ -450,32 +613,49 @@ margin-left: 55px;
 
 
 
+ul.share{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.share>li{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+ul.share>li>a{
+}
+ul.share>li>a:hover{
+  opacity: 0.5
+}
+
+
+
 
 
 
 /* ------- FONT LATO ------- */
 
-
-
 @font-face {
-  font-family: 'Lato Black';
-  src: url('Lato-Black.eot'); /* IE9 Compat Modes */
-  src: url('Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-Black.woff') format('woff'), /* Modern Browsers */
-       url('Lato-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-Black.svg#deafb22e0fea74c18abc97a942bb621e') format('svg'); /* Legacy iOS */
+  font-family: 'Lato';
+  src: url('fonts/Lato-Regular.eot'); 
+  src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Lato-Regular.woff') format('woff'), 
+       url('fonts/Lato-Regular.ttf')  format('truetype'), 
+       url('fonts/Lato-Regular.svg#48e70b8825d557df57af3e4f7d4c31be') format('svg'); 
        
   font-style:   normal;
   font-weight:  400;
 }
 
 @font-face {
-  font-family: 'Lato Black';
-  src: url('Lato-BlackItalic.eot'); /* IE9 Compat Modes */
-  src: url('Lato-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-BlackItalic.woff') format('woff'), /* Modern Browsers */
-       url('Lato-BlackItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-BlackItalic.svg#6b8da3d2951ae28f306d4067aff6fc5c') format('svg'); /* Legacy iOS */
+  font-family: 'Lato';
+  src: url('fonts/Lato-Italic.eot'); 
+  src: url('fonts/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Lato-Italic.woff') format('woff'), 
+       url('fonts/Lato-Italic.ttf')  format('truetype'), 
+       url('fonts/Lato-Italic.svg#51ac4eb0bc1817d276ca824c5353e08f') format('svg'); 
        
   font-style:   italic;
   font-weight:  400;
@@ -483,11 +663,11 @@ margin-left: 55px;
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Bold.eot'); /* IE9 Compat Modes */
-  src: url('Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-Bold.woff') format('woff'), /* Modern Browsers */
-       url('Lato-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-Bold.svg#eea591db52cf6ebc8992abb7621b9256') format('svg'); /* Legacy iOS */
+  src: url('fonts/Lato-Bold.eot'); 
+  src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Lato-Bold.woff') format('woff'), 
+       url('fonts/Lato-Bold.ttf')  format('truetype'), 
+       url('fonts/Lato-Bold.svg#eea591db52cf6ebc8992abb7621b9256') format('svg'); 
        
   font-style:   normal;
   font-weight:  700;
@@ -495,23 +675,54 @@ margin-left: 55px;
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-BoldItalic.eot'); /* IE9 Compat Modes */
-  src: url('Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */
-       url('Lato-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-BoldItalic.svg#030f5996dac0d7b15fbd4081adedf95b') format('svg'); /* Legacy iOS */
+  src: url('fonts/Lato-BoldItalic.eot'); 
+  src: url('fonts/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Lato-BoldItalic.woff') format('woff'), 
+       url('fonts/Lato-BoldItalic.ttf')  format('truetype'), 
+       url('fonts/Lato-BoldItalic.svg#030f5996dac0d7b15fbd4081adedf95b') format('svg'); 
        
   font-style:   italic;
   font-weight:  700;
 }
 
+
+
+/*
+@font-face {
+  font-family: 'Lato Black';
+  src: url('Lato-Black.eot'); 
+  src: url('Lato-Black.eot?#iefix') format('embedded-opentype'),
+       url('Lato-Black.woff') format('woff'), 
+       url('Lato-Black.ttf')  format('truetype'), 
+       url('Lato-Black.svg#deafb22e0fea74c18abc97a942bb621e') format('svg'); 
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url('Lato-BlackItalic.eot'); 
+  src: url('Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('Lato-BlackItalic.woff') format('woff'), 
+       url('Lato-BlackItalic.ttf')  format('truetype'), 
+       url('Lato-BlackItalic.svg#6b8da3d2951ae28f306d4067aff6fc5c') format('svg'); 
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
+*/
+
+
+/*
 @font-face {
   font-family: 'Lato Hairline';
-  src: url('Lato-Hairline.eot'); /* IE9 Compat Modes */
-  src: url('Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-Hairline.woff') format('woff'), /* Modern Browsers */
-       url('Lato-Hairline.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-Hairline.svg#477d11e773543baa2ffc5ab40fca9623') format('svg'); /* Legacy iOS */
+  src: url('Lato-Hairline.eot'); 
+  src: url('Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+       url('Lato-Hairline.woff') format('woff'), 
+       url('Lato-Hairline.ttf')  format('truetype'), 
+       url('Lato-Hairline.svg#477d11e773543baa2ffc5ab40fca9623') format('svg'); 
        
   font-style:   normal;
   font-weight:  400;
@@ -519,35 +730,24 @@ margin-left: 55px;
 
 @font-face {
   font-family: 'Lato Hairline';
-  src: url('Lato-HairlineItalic.eot'); /* IE9 Compat Modes */
-  src: url('Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-HairlineItalic.woff') format('woff'), /* Modern Browsers */
-       url('Lato-HairlineItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-HairlineItalic.svg#a326329371e687b71c219b7d91fb9255') format('svg'); /* Legacy iOS */
+  src: url('Lato-HairlineItalic.eot'); 
+  src: url('Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+       url('Lato-HairlineItalic.woff') format('woff'), 
+       url('Lato-HairlineItalic.ttf')  format('truetype'), 
+       url('Lato-HairlineItalic.svg#a326329371e687b71c219b7d91fb9255') format('svg'); 
        
   font-style:   italic;
   font-weight:  400;
 }
-
-@font-face {
-  font-family: 'Lato';
-  src: url('Lato-Italic.eot'); /* IE9 Compat Modes */
-  src: url('Lato-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-Italic.woff') format('woff'), /* Modern Browsers */
-       url('Lato-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-Italic.svg#51ac4eb0bc1817d276ca824c5353e08f') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  400;
-}
-
+*/
+/*
 @font-face {
   font-family: 'Lato Light';
-  src: url('Lato-Light.eot'); /* IE9 Compat Modes */
-  src: url('Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-Light.woff') format('woff'), /* Modern Browsers */
-       url('Lato-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-Light.svg#80d8021909d835b751af094d043ad177') format('svg'); /* Legacy iOS */
+  src: url('Lato-Light.eot'); 
+  src: url('Lato-Light.eot?#iefix') format('embedded-opentype'),
+       url('Lato-Light.woff') format('woff'), 
+       url('Lato-Light.ttf')  format('truetype'), 
+       url('Lato-Light.svg#80d8021909d835b751af094d043ad177') format('svg'); 
        
   font-style:   normal;
   font-weight:  200;
@@ -555,28 +755,16 @@ margin-left: 55px;
 
 @font-face {
   font-family: 'Lato Light';
-  src: url('Lato-LightItalic.eot'); /* IE9 Compat Modes */
-  src: url('Lato-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Lato-LightItalic.woff') format('woff'), /* Modern Browsers */
-       url('Lato-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Lato-LightItalic.svg#7015aa8810c4a9d1026a85e4ddcdf7a4') format('svg'); /* Legacy iOS */
+  src: url('Lato-LightItalic.eot'); 
+  src: url('Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('Lato-LightItalic.woff') format('woff'), 
+       url('Lato-LightItalic.ttf')  format('truetype'), 
+       url('Lato-LightItalic.svg#7015aa8810c4a9d1026a85e4ddcdf7a4') format('svg'); 
        
   font-style:   italic;
   font-weight:  200;
 }
-
-@font-face {
-  font-family: 'Lato Regular';
-  src: url('../src/Lato-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../src/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../src/Lato-Regular.woff') format('woff'), /* Modern Browsers */
-       url('../src/Lato-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../src/Lato-Regular.svg#48e70b8825d557df57af3e4f7d4c31be') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
+*/
 
 
 
@@ -590,14 +778,63 @@ margin-left: 55px;
 /* ------- FONT NB INTERNATIONAL ------- */
 
 
+@font-face {
+  font-family: 'NB International Pro';
+  src: url('fonts/NB-International-Pro-Regular.eot'); 
+  src: url('fonts/NB-International-Pro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NB-International-Pro-Regular.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Regular.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Regular.svg#73391c4d64d4dfef1c5a99ff4df99657') format('svg'); 
+       
+  font-style:   normal;
+  font-weight:  400;
+}
 
 @font-face {
-  font-family: 'NB International Pro Bold';
-  src: url('../src/NB International Pro Bold.eot'); /* IE9 Compat Modes */
-  src: url('../src/NB International Pro Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../src/NB International Pro Bold.woff') format('woff'), /* Modern Browsers */
-       url('../src/NB International Pro Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../src/NB International Pro Bold.svg#8638eb90c12ce5b9de0590a49bb33548') format('svg'); /* Legacy iOS */
+  font-family: 'NB International Pro';
+  src: url('fonts/NB-International-Pro-Light.eot'); 
+  src: url('fonts/NB-International-Pro-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NB-International-Pro-Light.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Light.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Light.svg#9fb1bd8312534123573e9a6705032d86') format('svg'); 
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'NB International Pro';
+  src: url('fonts/NB-International-Pro-Light Italic.eot'); 
+  src: url('fonts/NB-International-Pro-Light Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NB-International-Pro-Light Italic.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Light Italic.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Light Italic.svg#8d90cf74fadb25ffcee502bb25ff54fd') format('svg'); 
+       
+  font-style:   italic;
+  font-weight:  200;
+}
+
+
+@font-face {
+  font-family: 'NB International Pro';
+  src: url('fonts/NB-International-Pro-Italic.eot'); 
+  src: url('fonts/NB-International-Pro-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NB-International-Pro-Italic.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Italic.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Italic.svg#cdbb83ebb85bf8ca320412c9a17c7fc2') format('svg'); 
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
+
+@font-face {
+  font-family: 'NB International Pro';
+  src: url('fonts/NB-International-Pro-Bold.eot'); 
+  src: url('fonts/NB-International-Pro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NB-International-Pro-Bold.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Bold.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Bold.svg#8638eb90c12ce5b9de0590a49bb33548') format('svg'); 
        
   font-style:   normal;
   font-weight:  700;
@@ -607,11 +844,11 @@ margin-left: 55px;
 
 @font-face {
   font-family: 'NB International Pro';
-  src: url('NB International Pro Bold Italic.eot'); /* IE9 Compat Modes */
-  src: url('NB International Pro Bold Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NB International Pro Bold Italic.woff') format('woff'), /* Modern Browsers */
-       url('NB International Pro Bold Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NB International Pro Bold Italic.svg#c8efed6ec75822ef73e31a6860039163') format('svg'); /* Legacy iOS */
+  src: url('fonts/NB-International-Pro-Bold-Italic.eot'); 
+  src: url('fonts/NB-International-Pro-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/NB-International-Pro-Bold-Italic.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Bold-Italic.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Bold-Italic.svg#c8efed6ec75822ef73e31a6860039163') format('svg'); 
        
   font-style:   italic;
   font-weight:  700;
@@ -619,74 +856,19 @@ margin-left: 55px;
 
 
 
+/*
 @font-face {
-  font-family: 'NB International Pro Italic';
-  src: url('NB International Pro Italic.eot'); /* IE9 Compat Modes */
-  src: url('NB International Pro Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NB International Pro Italic.woff') format('woff'), /* Modern Browsers */
-       url('NB International Pro Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NB International Pro Italic.svg#cdbb83ebb85bf8ca320412c9a17c7fc2') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  400;
-}
-
-
-
-
-@font-face {
-  font-family: 'NB International Pro Light';
-  src: url('NB International Pro Light.eot'); /* IE9 Compat Modes */
-  src: url('NB International Pro Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NB International Pro Light.woff') format('woff'), /* Modern Browsers */
-       url('NB International Pro Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NB International Pro Light.svg#9fb1bd8312534123573e9a6705032d86') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  200;
-}
-
-@font-face {
-  font-family: 'NB International Pro Light Italic';
-  src: url('NB International Pro Light Italic.eot'); /* IE9 Compat Modes */
-  src: url('NB International Pro Light Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NB International Pro Light Italic.woff') format('woff'), /* Modern Browsers */
-       url('NB International Pro Light Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NB International Pro Light Italic.svg#8d90cf74fadb25ffcee502bb25ff54fd') format('svg'); /* Legacy iOS */
-       
-  font-style:   italic;
-  font-weight:  200;
-}
-
-@font-face {
-  font-family: 'NB International Pro Mono';
-  src: url('NB International Pro Mono.eot'); /* IE9 Compat Modes */
-  src: url('NB International Pro Mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NB International Pro Mono.woff') format('woff'), /* Modern Browsers */
-       url('NB International Pro Mono.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NB International Pro Mono.svg#f53b11eb8b4abde693eb9791c98cde77') format('svg'); /* Legacy iOS */
+  font-family: 'NB-International-Pro-Mono';
+  src: url('fonts/NB-International-Pro-Mono.eot'); 
+  src: url('fonts/NB-International-Pro-Mono.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/NB-International-Pro-Mono.woff') format('woff'), 
+       url('fonts/NB-International-Pro-Mono.ttf')  format('truetype'), 
+       url('fonts/NB-International-Pro-Mono.svg#f53b11eb8b4abde693eb9791c98cde77') format('svg'); 
        
   font-style:   normal;
   font-weight:  400;
 }
-
-@font-face {
-  font-family: 'NB International Pro Regular';
-  src: url('NB International Pro Regular.eot'); /* IE9 Compat Modes */
-  src: url('NB International Pro Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('NB International Pro Regular.woff') format('woff'), /* Modern Browsers */
-       url('NB International Pro Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('NB International Pro Regular.svg#73391c4d64d4dfef1c5a99ff4df99657') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
-
-
-
-
-
+*/
 
 
 
