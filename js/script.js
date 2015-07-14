@@ -29,10 +29,24 @@ setPages();
 
 // RESIZE
 
-$window.resize(function(){
+$(window).resize(function(){
 setPages();
 splitHalf();
 });
+
+$(window).on('scroll', function(){
+	var header = $('#header');
+
+	var st = $(window).scrollTop();
+	if(st>$(window).height()){
+		if( !header.hasClass("small-header") ) header.addClass("small-header");
+
+	}else{
+		if( header.hasClass("small-header") ) header.removeClass("small-header");
+
+	}
+
+})
 
 
 // SPLIT PAGE 7
@@ -60,8 +74,6 @@ function scrollDown(){
 	$goDown.click(function(){
 		$("html, body").animate({scrollTop: $windowHeight}, 400);
 	});
-
-
 
 
 
