@@ -92,18 +92,26 @@ margin-left: 55px;
 }
 
 .subtitle {
-	color: #5a5a5a;
-	text-align: center;
-	position: absolute;
-	bottom: 135px;
-	font-style: italic;
-	left: 0;
-	right: 0;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 25px;
+  color: #5a5a5a;
+  text-align: center;
+  position: absolute;
+  bottom: 135px;
+  font-style: italic;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
   /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: NB International Pro, sans-serif;
+}
+
+.subtitle_two {
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.2;
 	font-family: NB International Pro, sans-serif;
+  font-weight: bold;
 }
 
 .button{
@@ -363,17 +371,20 @@ margin-left: 55px;
 .page_five{
 	background: url(../img/bg5@2x.jpg) no-repeat center center;
 	/*background-position: center center;*/
-	-webkit-background-size: 160% auto;	
+/*	-webkit-background-size: 160% auto;	
   	-moz-background-size: 160% auto;	
   	-o-background-size: 160% auto;	
   	background-size: 160% auto;	
-  	color: #3c3c3c;
+*/  	
+    background-size: cover;
+    color: #3c3c3c;
   	position: relative;
   	/*height: 630px;*/
 /*  	width: 100vw;
     min-height: 90vh;
 */    
 	 padding: 100px 0; 
+   background-color: #fcfcfc;
 
 }
 
