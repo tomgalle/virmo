@@ -36,15 +36,16 @@ module.exports = (grunt)->
 				options:
 					base: './'
 
-		rsync:
-			deploy:
-				options:
-					ssh: true
-					recursive: true
-					src: "./"
-					dest: "/var/www/html/"
-					host: "ec2-user@52.27.239.88"
-					delete: false
+		# rsync:
+		# 	deploy:
+		# 		options:
+		# 			ssh: true
+		# 			exclude: ["node_modules", ".git*", "src", "Gruntfile.coffee", "package.json"]
+		# 			recursive: true
+		# 			src: "./"
+		# 			dest: "/var/www/html/"
+		# 			host: "ec2-user@52.27.239.88"
+		# 			delete: false
 
 
 
@@ -53,7 +54,7 @@ module.exports = (grunt)->
 
 
 	grunt.registerTask('dev', [ 'connect', 'watch' ])
-	grunt.registerTask('deploy', [ 'rsync:deploy' ])
+	# grunt.registerTask('deploy', [ 'rsync:deploy' ])
 
 
 

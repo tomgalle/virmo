@@ -68,7 +68,7 @@ p{margin: 0;}
 }
 
 .hero_wrapper{
-  background-image: url(../img/hero.jpg);  
+  background-image: url(../img/hero@2x.jpg);  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +201,9 @@ margin-left: 55px;
   
 }
 .pill3{
-  background-image: url(../img/pill3.png);
+  background-image: url(../img/pill3@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   width: 492px;
   height: 564px;
@@ -209,7 +211,9 @@ margin-left: 55px;
   left: 6vw;
 }
 .jar{
-  background-image: url(../img/jar.png);
+  background-image: url(../img/jar@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   width: 347px;
   height: 474px;
@@ -255,7 +259,7 @@ margin-left: 55px;
 
 .page_three{
 	background: url(../img/bg3@2x.jpg) no-repeat center center;
-	background-size: 2560px 851px;
+	/*background-size: 2560px 851px;*/
 	-webkit-background-size: cover;
   	-moz-background-size: cover;		
   	-o-background-size: cover;	
@@ -324,7 +328,7 @@ margin-left: 55px;
 
 .page_four{
 	background: url(../img/bg4@2x.jpg) no-repeat center center;
-	background-size: 2558px 816px;
+	/*background-size: 2558px 816px;*/
 	-webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
@@ -357,7 +361,7 @@ margin-left: 55px;
 
 
 .page_five{
-	background: url(../img/bg5.2@2x.jpg) no-repeat center center;
+	background: url(../img/bg5@2x.jpg) no-repeat center center;
 	/*background-position: center center;*/
 	-webkit-background-size: 160% auto;	
   	-moz-background-size: 160% auto;	
@@ -535,6 +539,13 @@ margin-left: 55px;
 	height: 50px;
 	margin: 0 auto;
 	margin-top: 270px;
+}
+
+.icons a{
+  opacity: .8;
+}
+.icons a:hover{
+  opacity: 1.0;
 }
 
 .apple{
