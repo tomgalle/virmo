@@ -87,18 +87,18 @@ function update(){
 	// parallax
 	if(st>0 && st<page1Height+page2Height){
 		jar.css({
-			'transform': 'translateY('+ -dy*0.2 +'px) rotate('+(-dy*0.010)+'deg)'
+			'transform': 'translate3D(0,'+ -dy*0.2 +'px,0) rotate('+(-dy*0.010)+'deg)'
 		})
 		pill1.css({
-			'transform': 'translateY('+ dy*1.2 +'px)'
+			'transform': 'translate3D(0,'+ dy*1.2 +'px,0)'
 		})
 
 		pill2.css({
-			'transform': 'translateY('+ dy*0.4 +'px)'
+			'transform': 'translate3D(0,'+ dy*0.4 +'px,0)'
 		})
 
 		pill3.css({
-			'transform': 'translateY('+ dy*0.1 +'px)'
+			'transform': 'translate3D(0,'+ dy*0.1 +'px,0)'
 		})
 
 		// $(".pagetwo_title").css({
