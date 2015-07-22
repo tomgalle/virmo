@@ -13,6 +13,9 @@ var section = $(".section");
 var goDown = $(".godown");
 var pageOne = $(".page_one");
 var header = $('#header');
+var lineBreak = $(".linebreak");
+var mobileWith = 480;
+var imgContainer = $(".page_two_img_container");
 
 var ticking = false;
 var latestScrollY = 0;
@@ -85,26 +88,33 @@ function update(){
 
 
 	// parallax
-	if(st>0 && st<page1Height+page2Height){
-		jar.css({
-			'transform': 'translate3D(0,'+ -dy*0.2 +'px,0) rotate('+(-dy*0.010)+'deg)'
-		})
-		pill1.css({
-			'transform': 'translate3D(0,'+ dy*1.2 +'px,0)'
-		})
 
-		pill2.css({
-			'transform': 'translate3D(0,'+ dy*0.4 +'px,0)'
-		})
 
-		pill3.css({
-			'transform': 'translate3D(0,'+ dy*0.1 +'px,0)'
-		})
 
-		// $(".pagetwo_title").css({
-			// 'transform': 'translateY('+ -dy*0.4 +'px)'
-		// })		
-	}
+
+	if ( windowWidth > mobileWith ){
+		if(st>0 && st<page1Height+page2Height){
+			jar.css({
+				'transform': 'translate3D(0,'+ -dy*0.2 +'px,0) rotate('+(-dy*0.010)+'deg)'
+			})
+			pill1.css({
+				'transform': 'translate3D(0,'+ dy*1.2 +'px,0)'
+			})
+
+			pill2.css({
+				'transform': 'translate3D(0,'+ dy*0.4 +'px,0)'
+			})
+
+			pill3.css({
+				'transform': 'translate3D(0,'+ dy*0.1 +'px,0)'
+			})
+
+			// $(".pagetwo_title").css({
+				// 'transform': 'translateY('+ -dy*0.4 +'px)'
+			// })		
+		}
+	} 
+	else {imgContainer.css({ display: "none"})};
 }
 
 
@@ -138,7 +148,14 @@ goDown.on('click', function(e){
 
 
 
+// if 
 
+// var mybr = document.createElement('br');
+// lineBreak.appendChild(mybr);
+
+
+
+// lineBreak.document.write('<br/>');
 
 
 

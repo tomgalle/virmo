@@ -63,7 +63,8 @@ p{margin: 0;}
 */	
   position: relative;
   
-	/* background-color: #f4f4f4; */
+	 /*background-color: #f4f4f4;*/
+   /*background-color: red; */
 
 }
 
@@ -165,12 +166,11 @@ margin-left: 55px;
 .page_two{
 	 /*background: url(../img/bg2.png) no-repeat center center; */
 	background-color: #ffffff;
-	-webkit-background-size:  180% auto;	
-  	-moz-background-size: 180% auto;	
-  	-o-background-size: 180% auto;	
-  	background-size: 220% auto;	
+	/*-webkit-background-size:  180% auto;	*/
+  /*-moz-background-size: 180% auto;	*/
+  /*-o-background-size: 180% auto;	*/
+  /*background-size: 220% auto;	*/
   position: relative;
-
   width: 100vw;
   height: 120vh;
   min-height: 816px;
@@ -676,7 +676,312 @@ ul.share>li>a:hover{
 
 
 
+
+
+
+
+
+
+
+/* ------------------------------------ PHONE ------------------------------------ */
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+
+/* ------- HEADER ------- */
+
+#header{
+  transform-origin: none;
+  transition: none;
+}
+
+#header.small-header{transform: none;}
+
+.logo{
+   width: 65px;
+  height: 45px;
+  margin-left: 13px;
+  margin-top: 13px;
+}
+
+
+
+
+/* ------- PAGEONE ------- */
+
+
+.hero_wrapper{
+  background-image: url(../img/hero@2x.jpg);  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  max-width: 519px;
+  max-height: 418px;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 35px;
+  left: 0;
+  margin: auto auto auto auto;
+  /*transform: translate(0, -60px);*/
+  /*background-color: red;*/
+}
+
+/*.hero_wrapper_mobile{
+width: 100vw;
+height: 100vh;
+background-color: gray;
+z-index: -100;
+}
+*/
+
+.subtitle {
+  color: #5a5a5a;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  right: 0;
+  margin: auto auto auto;
+  max-width: 80vw;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+
+
+.button{
+  width: 180px;
+  height: 28px;
+  position: absolute;
+  left:50%;
+  margin-left:-90px;
+  right: 0;
+  bottom: 0px;
+  padding-top: 15px;
+
+}
+
+
+.arrow{
+  width: 12px;
+  height: 12px;
+  border-bottom: 3px solid #b1b1b1;
+  border-right: 3px solid #b1b1b1;
+  position: absolute;
+  left:50%;
+  margin-left:-6px;
+  bottom: -30px;
+
+}
+
+
+
+
+/* ------- PAGE TWO ------- */
+
+
+.page_two{
+   /*background: url(../img/bg2.png) no-repeat center center; */
+  background-color: #ffffff;
+  /*-webkit-background-size:  180% auto;  */
+    /*-moz-background-size: 180% auto;  */
+    /*-o-background-size: 180% auto;  */
+    /*background-size: 220% auto; */
+  /*position: relative;*/
+
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  /*min-height: 816px;*/
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+.pagetwo_title{
+  z-index: 10;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  /*margin-top: 8vh;*/
+  line-height: 28px;
+  font-family: NB International Pro;
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 200px;
+  /*max-width: 600px;*/
+  /*max-height: 200px;*/
+  /*min-width: 570px;*/
+  /*min-height: 200px;*/
+  width: 90%;
+
+}
+
+
+
+.bg2_mobile{
+  /*background-color: red;*/
+/*  background-image: url(..img/bg2_mobile@2x.png) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;*/
+  /*max-height: 474px; */
+  /*max-width: 320px;*/
+
+  background-image: url(../img/bg2_mobile@2x.png);  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  max-height: 948px;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  margin: auto auto auto auto;
+  /*border: 1px solid black;*/
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+/* ------- PAGE THREE ------- */
+
+
+
+.page_three{
+  /*background: url(../img/bg3_mobile@2x.jpg) no-repeat center center;*/
+  /*background-size: 2560px 851px;*/
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;    
+  -o-background-size: cover;  
+  background-size: cover;*/
+  /*background-color: #ebe9ea;*/
+  /*overflow: hidden;*/
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  position: relative;
+  /*min-height: 816px;*/
+  overflow: hidden;
+  z-index: -100;
+  /*max-height: 816px;*/
+}
+
+
+
+
+
+
+.bg3_mobile{
+  background-image: url(../img/bg3_mobile@2x.png);  
+  /*max-width: 940px;*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 90%;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  margin: auto auto auto auto;
+  border: 1px solid black;
+  overflow: hidden;
+
+}
+
+
+.page_three .textblock{
+  color: black;
+  max-width: 410px;
+  /*min-height: 700px;*/
+  margin-left: 50%;
+  margin-top: 12vh;
+  padding-right: 40px;
+}
+
+
+.small_title{
+  color: #a5a5a5;
+  margin-bottom: 22px;
+  font-size: 14px;
+  text-transform: uppercase;
+  /*font-weight: medium;*/
+  font-family: Lato;
+}
+
+.large_title{
+  color: #3c3c3c;
+  font-size: 30px;
+  /*font-family: NB-International-Pro-Regular;*/
+}
+
+
+.text{
+  color: #a5a5a5;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+} /* ---------> END PHONE <--------- */
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------- FONT LATO ------- */
+
 
 @font-face {
   font-family: 'Lato';
@@ -725,95 +1030,6 @@ ul.share>li>a:hover{
   font-style:   italic;
   font-weight:  700;
 }
-
-
-
-/*
-@font-face {
-  font-family: 'Lato Black';
-  src: url('Lato-Black.eot'); 
-  src: url('Lato-Black.eot?#iefix') format('embedded-opentype'),
-       url('Lato-Black.woff') format('woff'), 
-       url('Lato-Black.ttf')  format('truetype'), 
-       url('Lato-Black.svg#deafb22e0fea74c18abc97a942bb621e') format('svg'); 
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'Lato Black';
-  src: url('Lato-BlackItalic.eot'); 
-  src: url('Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
-       url('Lato-BlackItalic.woff') format('woff'), 
-       url('Lato-BlackItalic.ttf')  format('truetype'), 
-       url('Lato-BlackItalic.svg#6b8da3d2951ae28f306d4067aff6fc5c') format('svg'); 
-       
-  font-style:   italic;
-  font-weight:  400;
-}
-
-*/
-
-
-/*
-@font-face {
-  font-family: 'Lato Hairline';
-  src: url('Lato-Hairline.eot'); 
-  src: url('Lato-Hairline.eot?#iefix') format('embedded-opentype'),
-       url('Lato-Hairline.woff') format('woff'), 
-       url('Lato-Hairline.ttf')  format('truetype'), 
-       url('Lato-Hairline.svg#477d11e773543baa2ffc5ab40fca9623') format('svg'); 
-       
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'Lato Hairline';
-  src: url('Lato-HairlineItalic.eot'); 
-  src: url('Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
-       url('Lato-HairlineItalic.woff') format('woff'), 
-       url('Lato-HairlineItalic.ttf')  format('truetype'), 
-       url('Lato-HairlineItalic.svg#a326329371e687b71c219b7d91fb9255') format('svg'); 
-       
-  font-style:   italic;
-  font-weight:  400;
-}
-*/
-/*
-@font-face {
-  font-family: 'Lato Light';
-  src: url('Lato-Light.eot'); 
-  src: url('Lato-Light.eot?#iefix') format('embedded-opentype'),
-       url('Lato-Light.woff') format('woff'), 
-       url('Lato-Light.ttf')  format('truetype'), 
-       url('Lato-Light.svg#80d8021909d835b751af094d043ad177') format('svg'); 
-       
-  font-style:   normal;
-  font-weight:  200;
-}
-
-@font-face {
-  font-family: 'Lato Light';
-  src: url('Lato-LightItalic.eot'); 
-  src: url('Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
-       url('Lato-LightItalic.woff') format('woff'), 
-       url('Lato-LightItalic.ttf')  format('truetype'), 
-       url('Lato-LightItalic.svg#7015aa8810c4a9d1026a85e4ddcdf7a4') format('svg'); 
-       
-  font-style:   italic;
-  font-weight:  200;
-}
-*/
-
-
-
-
-
-
-
-
 
 
 /* ------- FONT NB INTERNATIONAL ------- */
